@@ -1,6 +1,8 @@
 package com.bionic.edu.socialapp.db;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  * User: alex
@@ -9,10 +11,9 @@ import java.sql.DriverManager;
  */
 public class DBConnector {
 
-    public void getConnection() throws ClassNotFoundException {
+    public static Connection getConnection() throws ClassNotFoundException, SQLException {
       Class.forName("com.mysql.jdbc.Driver");
-      con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbdbd", "mysql", "mysql");
-      stm=con.createStatement();
+      return DriverManager.getConnection("jdbc:mysql://localhost:3306/social_app_lite", "root", "root");
     }
 
 }

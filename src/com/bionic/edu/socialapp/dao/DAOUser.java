@@ -3,15 +3,17 @@ package com.bionic.edu.socialapp.dao;
 import com.bionic.edu.socialapp.db.DBConnector;
 import com.bionic.edu.socialapp.entity.User;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * User: alex
  * Date: 10/3/13
  * Time: 9:00 PM
  */
-public class DAOUser {
+public class DAOUser{
 
   private static DAOUser instance;
 
@@ -26,13 +28,75 @@ public class DAOUser {
     return instance;
   }
 
-  public User getUser(String login, String password) throws SQLException, ClassNotFoundException {
-    User user = null;
-    ResultSet resultSet = DBConnector.getConnection().createStatement()
-        .executeQuery("SELECT * FROM tblUser where lgn='" + login + "' AND passwd='" + password + "';");
+  public boolean exist(String login) {
+    Connection connection = null;
+    Statement statement = null;
+    try {
+      connection = DBConnector.getConnection();
+      statement = connection.createStatement();
+      StringBuilder queryBuilder = new StringBuilder();
+      queryBuilder.append("SELECT 1 FROM tblUser where lgn='").append(login).append("';");
+      ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
+      return resultSet.first();
+    } catch (SQLException | ClassNotFoundException e) {
+      e.printStackTrace();
+      throw new RuntimeException(e);
+    }
+    finally {
+      if (statement != null){
+        try {
+          statement.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      if (connection != null){
+        try {
+          connection.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
 
+  public void delete(Long id) {
+    Connection connection = null;
+    Statement statement = null;
+    try {
+      connection = DBConnector.getConnection();
+      statement = connection.createStatement();
+      StringBuilder queryBuilder = new StringBuilder();
+      queryBuilder.append("DELETE FROM tblUser where id=").append(id).append(";");
+      statement.executeQuery(queryBuilder.toString());
+    } catch (SQLException | ClassNotFoundException e) {
+      e.printStackTrace();
+      throw new RuntimeException(e);
+    }
+    finally {
+      if (statement != null){
+        try {
+          statement.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      if (connection != null){
+        try {
+          connection.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
 
-    return user;
+  public void insert(User user ) {
+    //To change body of implemented methods use File | Settings | File Templates.
+  }
+
+  public void update(User user) {
+    //To change body of implemented methods use File | Settings | File Templates.
   }
 
 }

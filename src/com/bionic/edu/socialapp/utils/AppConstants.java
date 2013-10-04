@@ -10,4 +10,10 @@ public class AppConstants {
   public static final String REQUEST_LOGIN = "login";
   public static final String REQUEST_PASSWORD = "password";
 
+  public static final String CFG_DB_DRIVER = "DB_DRIVER";
+  public static final String CFG_DB_CONNECTION = "DB_CONNECTION";
+  public static final String CFG_DB_LOGIN = "DB_LOGIN";
+  public static final String CFG_DB_PASSWORD = "DB_PASSWORD";
+
+
 }

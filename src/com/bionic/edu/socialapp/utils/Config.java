@@ -13,14 +13,42 @@ import java.util.Properties;
 public class Config {
 
   private static Config instance;
+  Properties properties;
+
+  public static Config getInstance(){
+    if (instance==null){
+      instance = new Config();
+    }
+    return instance;
+  }
 
   private Config() {
-    Properties properties = new Properties();
+    properties = new Properties();
     try {
       properties.load(new FileInputStream(new File("/config/config.properties")));
     } catch (IOException e) {
       e.printStackTrace();
     }
+  }
+
+  public String getValue(String key){
+    return properties.getProperty(key);
+  }
+
+  public String getDBDriver(){
+    return properties.getProperty(AppConstants.CFG_DB_DRIVER);
+  }
+
+  public String getDConnectionString(){
+    return properties.getProperty(AppConstants.CFG_DB_CONNECTION);
+  }
+
+  public String getDBLogin(){
+    return properties.getProperty(AppConstants.CFG_DB_LOGIN);
+  }
+
+  public String getDBPassword(){
+    return properties.getProperty(AppConstants.CFG_DB_PASSWORD);
   }
 
 }

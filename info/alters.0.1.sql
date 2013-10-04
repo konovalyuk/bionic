@@ -8,11 +8,14 @@ CREATE TABLE tblUser (
   passwd VARCHAR(256) NOT NULL,
   firstName VARCHAR (50) NOT NULL,
   lastName VARCHAR (50) NOT NULL,
+  phoneNumber VARCHAR (18),
+  addressId BIGINT,
   userRole BIGINT(1) NOT NULL DEFAULT 0,
   userState BIGINT(1) NOT NULL DEFAULT 0,
 
   PRIMARY KEY (id),
-  UNIQUE KEY (lgn)
+  UNIQUE KEY (lgn),
+  UNIQUE KEY (phoneNumber)
 
 ) ENGINE=InnDB DEFAULT CHARSET=utf8;
 
@@ -34,7 +37,7 @@ CREATE TABLE tblMessage (
   content VARCHAR (256),
   authorId BIGINT NOT NULL ,
   conversationID BIGINT NOT NULL,
-
+#       state
   PRIMARY KEY (id)
 
 ) ENGINE=InnDB DEFAULT CHARSET=utf8;
@@ -86,11 +89,8 @@ CREATE TABLE tblAddress (
   id BIGINT NOT NULL AUTO_INCREMENT ,
   cityID BIGINT NOT NULL ,
   street VARCHAR (70),
-  phoneNumber VARCHAR (18),
 
   PRIMARY KEY (id),
-
-  UNIQUE KEY (phoneNumber),
 
   CONSTRAINT fk_tbladdress_city_id FOREIGN KEY (cityID) REFERENCES tblCity(id)
 

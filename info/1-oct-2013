@@ -1,0 +1,162 @@
+анализаторы (parsers) хмл:
+- древовидные (DOM)
+- SAX (simple api for xml) - послед. одноразовая обработка документа
+- STAX (straming api for xml) - тоже не создет дерево, отличие - за запуск к след эл отвечает отдельное приложение
+
+SAX
+SAXParserFactory -> SAXParser -> SAXReader
+
+SAXReader :
+1. ContentHandler
+2. ErrorHandler
+3. DTDHandler
+4. EntityResolver
+
+SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setNameSpaceAware(true);
+SAXParser parser = factory.newSAXParser();
+parser.setProperty(“”,””);
+InputStream in = new IS(file);
+DefaultHandler handler = new MyHandler();
+parser.parse(in, handler);
+
+----
+javax.xml.parsers.SAXPArserFactory systemProperty
+lib/jaxp.properties - in the jre dir
+META-INF/services/javax.xml.parsers.SAXParserFactory
+Platform default SaxParserFactory insatnce
+---
+
+DeffaultHandler:
+ContentHandler
+ErrorHandler
+DTDHandler
+EntityResolver
+
+-----
+Namespace
+
+<root xmlns:ns1="http://">
+    <ns1:elem>
+    // elem - localname
+    // <ns1:elem> qualified name
+</root>
+
+
+public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+// code here....
+    }
+
+Examples:
+1)
+<root>
+    <elem>
+</root>
+
+public void startElement("", "", "elem", "") throws SAXException {
+}
+
+2)
+<root xmlns:cdp = "http://cdp">
+    <cdp:elem/>
+</root>
+NamespaceAware true
+
+public void startElement("http://cdp", "elem", "cdp:elem", "") throws SAXException {
+}
+
+3)
+<root xmlns = "http://cdp">
+    <elem/>
+</root>
+
+public void startElement("http://cdp", "elem", "elem", "") throws SAXException {
+}
+
+4)
+<root xmlns = "http://cdp">
+    <elem a="1"/>
+</root>
+public void startElement("http://cdp", "elem", "elem", uri="" localname="" qname="a"; value="1"){}
+
+5)
+<root xmlns:cdp = "http://cdp">
+    <cdp:elem a="1"/>
+</root>
+
+public void startElement("http://cdp", "elem", "cdp:elem", uri="" localname="" see before) {}
+
+6)
+<root xmlns:cdp = "http://cdp">
+    <cdp:elem cdp:a="1"/>
+</root>
+public void startElement("http://cdp", "elem", "cdp:elem", uri="http:cdp" localname="a" qname="cdp:a"; value="1") {}
+
+7)
+<root xmlns:cdp = "http://cdp">
+    <cdp:elem cdp:a="1"/>
+</root>
+NamespaceAware false
+
+public void startElement("", "", "cdp:elem", uri="" localname="" qname="cdp:a"; value="1") {}
+
+        Валидация по схеме dtd
+ 1) сконфигурировать фабрику
+    factory.setValidation(true)
+ 2) handle error
+     public void error(SAXParseException e) throws SAXException{
+        throw e
+     }
+ 3) resolve entities
+
+            валидация по xml схеме
+ 1) config factory
+ 2) config parser
+ 3) handler error
+
+ ___________________________________________________________________________________
+
+                            DOM
+
+ DocumentBuilderFactory -> DocumentBuilder
+
+ XML to DocumentBuilder --> Document (DOM tree)
+
+ Code:
+
+  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+  factory.setNamespaceAware(true);
+  factory.setValidating(true);
+  DocumentBuilder builder = factory.newDocumentBuilder();
+  builder.setEntityResolver(null);
+  builder.setErrorHandler(null);
+  Document document = builder.parse(new File(""));
+
+
+  DOM operations:
+  - search for nodes
+  - obtaining node content
+  - create attributes
+  - delete  nodes
+  - change nodes
+  - insert nodes
+  - ...
+
+  __________________________________________________________________________________
+
+                              SAX   vs  DOM
+  Speed                         +
+  memory                        +
+  easy to use                           +
+  navigation manipulation               +
+
+
+  _____________________________________________________________________________________
+
+                                        XSLT (Extensible stylesheet style transformation
+
+  TransformerFactory -> Transformer has TransformationInstructions
+
+  Source to Transformet --> Result
+
+

@@ -9,6 +9,7 @@ public class AppConstants {
 
   public static final String REQUEST_LOGIN = "login";
   public static final String REQUEST_PASSWORD = "password";
+  public static final String REQUEST_TOKEN = "auth_token";
 
   public static final String CFG_DB_DRIVER = "DB_DRIVER";
   public static final String CFG_DB_CONNECTION = "DB_CONNECTION";

@@ -13,4 +13,5 @@ public class MyAccountCommand implements Command {
   public String execute(HttpServletRequest request, HttpServletResponse response) {
     return null;
   }
+
 }

@@ -6,6 +6,7 @@ import com.bionic.edu.socialapp.utils.LoginUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
 
 /**
  * User: alex
@@ -18,7 +19,19 @@ public class LoginCommand implements Command {
   public String execute(HttpServletRequest request, HttpServletResponse response) {
     String login = request.getParameter(AppConstants.REQUEST_LOGIN);
     String password = request.getParameter(AppConstants.REQUEST_PASSWORD);
-    return LoginUtils.login(login, password) ? "some success string" : "login fail";
+    String authToken = request.getParameter(AppConstants.REQUEST_PASSWORD);
+    String result = "/login.jsp";
+    try {
+      if (LoginUtils.login(login, password, authToken)){
+        request.setAttribute("loggedUser", DAOUser.getInstance().getUserFullNameByLogin(login));
+        result = "/my-account.jsp";
+      } else {
+        request.setAttribute("invalidLogin", true);
+      }
+    } catch (UnsupportedEncodingException e) {
+      e.printStackTrace();
+    }
+    return  result;
   }
 
 }

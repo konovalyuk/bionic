@@ -1,47 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2866a90-cad9-463a-b736-f68aa14b6eab" name="Default" comment="check commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/data.sql" />
+    <list default="true" id="e2866a90-cad9-463a-b736-f68aa14b6eab" name="Default" comment="fri, oct-4">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOFriends.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/Friend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/TestConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/script/libs/jquery-1.10.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/lessons/theory/less2-3-10-2013.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/lessons/theory/less3-6-10-2013.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/my-account.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/info/3-oct-2013" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/info/1-oct-2013" afterPath="$PROJECT_DIR$/info/lessons/theory/less1-1-10-2013.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/WEB-INF/config/config.properties" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/Command.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/Command.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/Config.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/ControllerServlet.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/ControllerServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/db/DBConnector.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/db/DBConnector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/User.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info/alters.0.1.sql" afterPath="$PROJECT_DIR$/info/alters.0.1.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info/data.sql" afterPath="$PROJECT_DIR$/info/data.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="dd47b037-22ba-4844-9848-a055f985208d" name="not-for-commit" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/info/1-oct-2013" afterPath="$PROJECT_DIR$/info/lessons/1-oct-2013" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/info/3-oct-2013" afterPath="$PROJECT_DIR$/info/lessons/3-oct-2013" />
-    </list>
+    <list id="dd47b037-22ba-4844-9848-a055f985208d" name="not-for-commit" comment="" />
     <ignored path="Bionic.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MyHandler.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380814339129" ignored="false" />
     <file path="/1-oct" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380646869445" ignored="false" />
-    <file path="/fragment.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380823736117" ignored="false" />
-    <file path="/alters.0.1.sql" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380824090947" ignored="false" />
+    <file path="/fragment.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381085734627" ignored="false" />
+    <file path="/alters.0.1.sql" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381084147299" ignored="false" />
     <file path="/3-oct-2013" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380814494421" ignored="false" />
     <file path="/DBConnector.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380916251372" ignored="false" />
     <file path="/a.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380817634505" ignored="false" />
     <file path="/a.js" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380820031989" ignored="false" />
-    <file path="/Dummy.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380914548791" ignored="false" />
+    <file path="/Dummy.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381086865527" ignored="false" />
     <file path="/config.properties" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380821492558" ignored="false" />
-    <file path="/Config.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380915046757" ignored="false" />
+    <file path="/Config.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380958308939" ignored="false" />
     <file path="/ICommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380821996883" ignored="false" />
-    <file path="/LoginCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380921062104" ignored="false" />
+    <file path="/LoginCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380965574913" ignored="false" />
     <file path="/CommandFactory.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380822777219" ignored="false" />
-    <file path="/MyAccountCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380921041915" ignored="false" />
-    <file path="/ControllerServlet.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380822916872" ignored="false" />
-    <file path="/AppConstants.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380914828290" ignored="false" />
-    <file path="/DAOUser.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380919791676" ignored="false" />
+    <file path="/MyAccountCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380956637042" ignored="false" />
+    <file path="/ControllerServlet.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380964124605" ignored="false" />
+    <file path="/AppConstants.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380965145465" ignored="false" />
+    <file path="/DAOUser.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381086617001" ignored="false" />
     <file path="/README.md" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380868776135" ignored="false" />
     <file path="/DAOFactory.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380917303836" ignored="false" />
     <file path="/DAO.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380917851155" ignored="false" />
-    <file path="/LoginUtils.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380920361303" ignored="false" />
+    <file path="/LoginUtils.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380966651335" ignored="false" />
     <file path="/Command.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380921003717" ignored="false" />
+    <file path="/TestConnection.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380965855985" ignored="false" />
+    <file path="/6-oct-2013" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380957559709" ignored="false" />
+    <file path="/data.sql" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381083520751" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2_1.xsd" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959085588" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspdirectives2_1.xsd" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959085588" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2.xsd" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959085588" ignored="false" />
+    <file path="/index.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380963613793" ignored="false" />
+    <file path="/web.xml" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959750797" ignored="false" />
+    <file path="/less3-6-10-2013.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380960325323" ignored="false" />
+    <file path="/less2-3-10-2013.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380960331815" ignored="false" />
+    <file path="/login.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380965608437" ignored="false" />
+    <file path="/my-account.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380964190224" ignored="false" />
+    <file path="/DAOFriends.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381086858212" ignored="false" />
+    <file path="/User.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381085455243" ignored="false" />
+    <file path="/Friend.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381084658882" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +135,42 @@
       <file leaf-file-name="alters.0.1.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info/alters.0.1.sql">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="511" selection-end="600" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="18" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Friend.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/Friend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="0" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOUser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
@@ -121,10 +186,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
+      <file leaf-file-name="DAOFriends.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOFriends.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="1" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+            <state line="60" column="11" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,66 +197,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java">
+      <file leaf-file-name="servlet_api.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/libraries/servlet_api.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DAOUser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java">
+      <file leaf-file-name="Statement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/bin/java/jdk1.7.0_40/src.zip!/java/sql/Statement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="5" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppConstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="57" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+            <state line="64" column="4" selection-start="2096" selection-end="2105" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java">
+      <file leaf-file-name="data.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyAccountCommand.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="357" selection-end="357" vertical-scroll-proportion="0.5042017">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBConnector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/db/DBConnector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="31" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,30 +242,149 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/IComand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/ICommand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java" />
+        <option value="$PROJECT_DIR$/info/lessons/theory/less2-3-10-2013.txt" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/ControllerServlet.java" />
-        <option value="$PROJECT_DIR$/info/alters.0.1.sql" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/web/my-account.jsp" />
         <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/Config.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/db/DBConnector.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAO.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java" />
         <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java" />
         <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/src/test/TestConnection.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java" />
+        <option value="$PROJECT_DIR$/info/data.sql" />
+        <option value="$PROJECT_DIR$/info/alters.0.1.sql" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/Friend.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOFriends.java" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
     <option name="y" value="-4" />
     <option name="width" value="1217" />
     <option name="height" value="805" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Class metrics</id>
+          </State>
+          <State>
+            <id>Control FlowGroovy</id>
+          </State>
+          <State>
+            <id>Control flow issues</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Dependency issues</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>J2ME issues</id>
+          </State>
+          <State>
+            <id>Java language level issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Method MetricsGroovy</id>
+          </State>
+          <State>
+            <id>Method metrics</id>
+          </State>
+          <State>
+            <id>Modularization issues</id>
+          </State>
+          <State>
+            <id>Naming conventions</id>
+          </State>
+          <State>
+            <id>Numeric issues</id>
+          </State>
+          <State>
+            <id>Packaging issues</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Security issues</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Visibility issues</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -269,6 +415,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -311,47 +458,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,6 +503,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="socialapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -457,6 +572,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socialapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -475,13 +612,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lessons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="68" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -490,12 +648,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="68" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar!/" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="91" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="890" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="890" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="91" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="86" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -509,22 +669,47 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/info/lessons" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/config" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.bionic.edu.socialapp" />
       <recent name="com.bionic.edu.socialapp.entity" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils" />
+      <recent name="$PROJECT_DIR$/info/lessons" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/config" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestConnection">
+    <configuration default="false" name="TestConnection" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="test.TestConnection" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Bionic" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -616,7 +801,102 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Bionic:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/bionic" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Bionic" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58965" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Bionic:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestConnection" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestConnection" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -663,38 +943,42 @@
       <created>1380868801508</created>
       <updated>1380868801508</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fri, oct-4">
+      <created>1380921245303</created>
+      <updated>1380921245303</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1217" height="805" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3840246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39938557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22918455" sideWeight="0.67127496" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -740,7 +1024,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="check commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fri, oct-4" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -757,6 +1041,7 @@
     <MESSAGE value="alters" />
     <MESSAGE value="5" />
     <MESSAGE value="check commit" />
+    <MESSAGE value="fri, oct-4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -766,93 +1051,84 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/ControllerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="23" column="49" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/lessons/3-oct-2013">
+    <entry file="jar://$USER_HOME$/bin/java/jdk1.7.0_40/jre/lib/rt.jar!/sun/misc/BASE64Encoder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="68" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
+        <state line="6" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.23219815" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/data.sql">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/config/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="4" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/bin/java/jdk1.7.0_40/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1139" column="12" selection-start="53456" selection-end="53456" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info/alters.0.1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="12" column="17" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/db/DBConnector.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
+        <state line="10" column="13" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java">
+    <entry file="jar://$USER_HOME$/bin/java/jdk1.7.0_40/src.zip!/java/sql/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="5" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="64" column="4" selection-start="2096" selection-end="2105" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java">
+    <entry file="file://$PROJECT_DIR$/info/data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/alters.0.1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="511" selection-end="600" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/Friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="18" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -864,18 +1140,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOFriends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="11" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java">
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/servlet_api.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="357" selection-end="357" vertical-scroll-proportion="0.5042017">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

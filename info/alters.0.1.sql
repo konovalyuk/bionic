@@ -19,12 +19,14 @@ CREATE TABLE tblUser (
 
 ) ENGINE=InnDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE tblRelation (
+CREATE TABLE tblFriend (
   id BIGINT NOT NULL AUTO_INCREMENT,
   userID BIGINT NOT NULL,
   friendID BIGINT NOT NULL,
 
   PRIMARY KEY (id),
+
+  UNIQUE KEY (userID, friendID),
 
   CONSTRAINT fk_tbluser_user_id FOREIGN KEY (userID) REFERENCES tblUser(id),
   CONSTRAINT fk_tbluser_friend_id FOREIGN KEY (friendID) REFERENCES tblUser(id)
@@ -95,3 +97,5 @@ CREATE TABLE tblAddress (
   CONSTRAINT fk_tbladdress_city_id FOREIGN KEY (cityID) REFERENCES tblCity(id)
 
 ) ENGINE=InnDB DEFAULT CHARSET=utf8;
+#  add 'sex' column to tblUser
+ALTER TABLE tblUser ADD COLUMN sex BIGINT(1) NOT NULL DEFAULT 1;

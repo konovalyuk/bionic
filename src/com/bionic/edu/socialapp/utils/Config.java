@@ -25,9 +25,11 @@ public class Config {
   private Config() {
     properties = new Properties();
     try {
-      properties.load(new FileInputStream(new File("/config/config.properties")));
+      properties.load(new FileInputStream("/home/alex/IdeaProjects/Bionic/src/com/bionic/edu/socialapp/utils/config.properties"));
     } catch (IOException e) {
       e.printStackTrace();
+      System.err.println("Unable to load config file. Exit.");
+      System.exit(42);
     }
   }
 

@@ -1,13 +1,11 @@
 package com.bionic.edu.socialapp.utils;
 
-import com.bionic.edu.socialapp.db.DBConnector;
+import com.bionic.edu.socialapp.dao.DAOUser;
 import sun.misc.BASE64Encoder;
 
 import java.io.UnsupportedEncodingException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * User: alex
@@ -16,45 +14,29 @@ import java.sql.Statement;
  */
 public class LoginUtils {
 
-  public static boolean login(String login, String password){
+  private static Map<String, String> tokens = new HashMap<>();
+
+  public static boolean login(String login, String password, String authToken) throws UnsupportedEncodingException {
     // todo
-    Connection connection = null;
-    Statement statement = null;
-    try {
-      connection = DBConnector.getConnection();
-      statement = connection.createStatement();
-      StringBuilder queryBuilder = new StringBuilder();
-      queryBuilder
-          .append("SELECT 1 FROM tblUser where lgn='").append(login)
-          .append("' AND passwd='").append(password).append("';");
-      ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
-      return resultSet.first();
-    } catch (SQLException | ClassNotFoundException e) {
-      e.printStackTrace();
-      throw new RuntimeException(e);
+    if (isTokenValidForLogin(authToken, login)){
+      return true;
     }
-    finally {
-      if (statement != null){
-        try {
-          statement.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+    if (DAOUser.getInstance().login(login, password)){
+      tokens.remove(login);
+      tokens.put(login, encodeString(login + System.currentTimeMillis()));
+      return true;
     }
+    return false;
+  }
+
+  public static boolean isTokenValidForLogin(String token, String login){
+    return token!=null && !token.isEmpty() && tokens.containsValue(token) && token.equals(tokens.get(login));
   }
 
   // todo add later
-  private static String encodePassword(String password) throws UnsupportedEncodingException {
+  private static String encodeString(String string) throws UnsupportedEncodingException {
     BASE64Encoder encoder = new BASE64Encoder();
-    return encoder.encode(password.getBytes("UTF-8" ));
+    return encoder.encode(string.getBytes("UTF-8" ));
   }
 
 }

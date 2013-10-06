@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2866a90-cad9-463a-b736-f68aa14b6eab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/info/lessons/theory/less1-1-10-2013.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/info/lessons/theory/less2-3-10-2013.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/info/lessons/theory/less3-6-10-2013.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="dd47b037-22ba-4844-9848-a055f985208d" name="not-for-commit" comment="" />
@@ -18,7 +15,7 @@
     <file path="/DBConnector.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380916251372" ignored="false" />
     <file path="/a.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380817634505" ignored="false" />
     <file path="/a.js" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380820031989" ignored="false" />
-    <file path="/Dummy.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381086903539" ignored="false" />
+    <file path="/Dummy.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381087206913" ignored="false" />
     <file path="/config.properties" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380821492558" ignored="false" />
     <file path="/Config.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380958308939" ignored="false" />
     <file path="/ICommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380821996883" ignored="false" />
@@ -897,7 +894,11 @@
       <created>1381086956177</created>
       <updated>1381086956177</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="sun, oct-6">
+      <created>1381087223817</created>
+      <updated>1381087223817</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">

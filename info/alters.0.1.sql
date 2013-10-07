@@ -39,20 +39,13 @@ CREATE TABLE tblMessage (
   content VARCHAR (256),
   authorId BIGINT NOT NULL ,
   conversationID BIGINT NOT NULL,
-#       state
+  state BIGINT(1) NOT NULL DEFAULT 0,
+
   PRIMARY KEY (id)
 
 ) ENGINE=InnDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE tblChat (
-  id BIGINT NOT NULL AUTO_INCREMENT,
-  participants BIGINT,
-
-  PRIMARY KEY (id)
-
-) ENGINE=InnDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE tblChatUsers (
   id BIGINT NOT NULL AUTO_INCREMENT,
   chatID BIGINT NOT NULL ,
   userID BIGINT NOT NULL,

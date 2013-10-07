@@ -17,6 +17,17 @@ import java.util.List;
  */
 public class DAOFriend {
 
+  private static DAOFriend instance;
+
+  private DAOFriend(){}
+
+  public static DAOFriend getInstance(){
+    if (instance==null){
+      instance = new DAOFriend();
+    }
+    return instance;
+  }
+
   public List<User> listFriends(Long userId) {
     Connection connection = null;
     Statement statement = null;

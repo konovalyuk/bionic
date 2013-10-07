@@ -7,6 +7,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * User: alex
@@ -175,6 +177,113 @@ public class DAOUser{
       queryBuilder.append("SELECT CONCAT(firstName, ' ',lastName) FROM tblUser where lgn='").append(login).append("';");
       ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
       return resultSet.next() ? resultSet.getString(1) : "Unnamed user";
+    } catch (SQLException | ClassNotFoundException e) {
+      e.printStackTrace();
+      throw new RuntimeException(e);
+    }
+    finally {
+      if (statement != null){
+        try {
+          statement.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      if (connection != null){
+        try {
+          connection.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
+  public void enableDisableUser(Long userId, boolean enable){
+    Connection connection = null;
+    Statement statement = null;
+    try {
+      connection = DBConnector.getConnection();
+      statement = connection.createStatement();
+      StringBuilder queryBuilder = new StringBuilder();
+      queryBuilder.append("UPDATE tblUser SET userState=")
+          .append(enable ? User.UserState.ACTIVE : User.UserState.DISABLED)
+          .append(" where id=").append(userId).append(";");
+      statement.execute(queryBuilder.toString());
+    } catch (SQLException | ClassNotFoundException e) {
+      e.printStackTrace();
+      throw new RuntimeException(e);
+    }
+    finally {
+      if (statement != null){
+        try {
+          statement.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      if (connection != null){
+        try {
+          connection.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
+  public List<User> findByNameOrLastName(String searchPhrase, Long currentUserId){
+    Connection connection = null;
+    Statement statement = null;
+    try {
+      connection = DBConnector.getConnection();
+      statement = connection.createStatement();
+      StringBuilder queryBuilder = new StringBuilder();
+      queryBuilder.append("SELECT DISTINCT * FROM tblUser WHERE (firstName LIKE '%")
+          .append(searchPhrase).append("%' OR lastName LIKE '%").append(searchPhrase).append("%') AND id <>")
+          .append(currentUserId).append(";");
+      ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
+      List<User> matched = new ArrayList<>();
+      while (resultSet.next()){
+        matched.add(DAOUser.getUserFromResultSet(resultSet));
+      }
+      return matched;
+    } catch (SQLException | ClassNotFoundException e) {
+      e.printStackTrace();
+      throw new RuntimeException(e);
+    }
+    finally {
+      if (statement != null){
+        try {
+          statement.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      if (connection != null){
+        try {
+          connection.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
+  public void updateUser(User user){
+    Connection connection = null;
+    Statement statement = null;
+    try {
+      connection = DBConnector.getConnection();
+      statement = connection.createStatement();
+      StringBuilder queryBuilder = new StringBuilder();
+      queryBuilder.append("UPDATE tblUser SET ")
+          .append("firstName=").append(user.getFirstName()).append(" ")
+          .append("lastName=").append(user.getLastName()).append(" ")
+          .append("phoneNumber=").append(user.getPhoneNumber()).append(" ")
+          .append("sex=").append(user.getSex()).append(" ")
+          .append(" WHERE id=").append(user.getId());
+      statement.execute(queryBuilder.toString());
     } catch (SQLException | ClassNotFoundException e) {
       e.printStackTrace();
       throw new RuntimeException(e);

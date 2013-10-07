@@ -6,6 +6,16 @@ package com.bionic.edu.socialapp.dao;
  */
 public class DAOAddress {
 
+  private static DAOAddress instance;
+
+  private DAOAddress(){}
+
+  public static DAOAddress getInstance(){
+    if (instance==null){
+      instance = new DAOAddress();
+    }
+    return instance;
+  }
 
 
 }

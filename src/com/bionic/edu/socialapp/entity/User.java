@@ -149,4 +149,16 @@ public class User {
     this.sex = sex;
   }
 
+  @Override
+  public String toString() {
+    StringBuilder builder = new StringBuilder();
+    builder.append("[ User: [")
+        .append("[id:").append(this.getId()).append("] ")
+        .append("[firstName:").append(this.getFirstName()).append("] ")
+        .append("[lastName:").append(this.getLastName()).append("] ")
+        .append("[sex:").append(this.getSex()).append("] ")
+        .append("[phone:").append(this.getPhoneNumber()).append("] ")
+        .append("] ]");
+    return builder.toString();
+  }
 }

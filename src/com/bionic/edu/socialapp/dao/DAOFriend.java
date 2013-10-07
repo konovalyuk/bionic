@@ -15,7 +15,7 @@ import java.util.List;
  * Date: 10/5/13
  * Time: 12:52 PM
  */
-public class DAOFriends {
+public class DAOFriend {
 
   public List<User> listFriends(Long userId) {
     Connection connection = null;

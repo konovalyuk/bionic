@@ -25,7 +25,9 @@ public class Config {
   private Config() {
     properties = new Properties();
     try {
-      properties.load(new FileInputStream("/home/alex/IdeaProjects/Bionic/src/com/bionic/edu/socialapp/utils/config.properties"));
+      String filePath = this.getClass().getProtectionDomain().getCodeSource().getLocation() +
+                        "com/bionic/edu/socialapp/utils/config.properties";
+      properties.load(new FileInputStream(filePath.replace("file:", "")));
     } catch (IOException e) {
       e.printStackTrace();
       System.err.println("Unable to load config file. Exit.");

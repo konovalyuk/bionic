@@ -34,7 +34,7 @@ public class DAOUser{
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT 1 FROM tblUser where lgn='").append(login).append("';");
@@ -63,41 +63,16 @@ public class DAOUser{
   }
 
   public void delete(Long id) {
-    Connection connection = null;
-    Statement statement = null;
-    try {
-      connection = DBConnector.getConnection();
-      statement = connection.createStatement();
-      StringBuilder queryBuilder = new StringBuilder();
-      queryBuilder.append("DELETE FROM tblUser where id=").append(id).append(";");
-      statement.executeQuery(queryBuilder.toString());
-    } catch (SQLException | ClassNotFoundException e) {
-      e.printStackTrace();
-      throw new RuntimeException(e);
-    }
-    finally {
-      if (statement != null){
-        try {
-          statement.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-    }
+    StringBuilder queryBuilder = new StringBuilder();
+    queryBuilder.append("DELETE FROM tblUser where id=").append(id).append(";");
+    DBConnector.getInstance().execute(queryBuilder.toString());
   }
 
   public boolean login(String login, String password){
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder
@@ -139,7 +114,7 @@ public class DAOUser{
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT * FROM tblUser where id=").append(id).append(";");
@@ -171,7 +146,7 @@ public class DAOUser{
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT CONCAT(firstName, ' ',lastName) FROM tblUser where lgn='").append(login).append("';");
@@ -200,43 +175,18 @@ public class DAOUser{
   }
 
   public void enableDisableUser(Long userId, boolean enable){
-    Connection connection = null;
-    Statement statement = null;
-    try {
-      connection = DBConnector.getConnection();
-      statement = connection.createStatement();
-      StringBuilder queryBuilder = new StringBuilder();
-      queryBuilder.append("UPDATE tblUser SET userState=")
-          .append(enable ? User.UserState.ACTIVE : User.UserState.DISABLED)
-          .append(" where id=").append(userId).append(";");
-      statement.execute(queryBuilder.toString());
-    } catch (SQLException | ClassNotFoundException e) {
-      e.printStackTrace();
-      throw new RuntimeException(e);
-    }
-    finally {
-      if (statement != null){
-        try {
-          statement.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-    }
+    StringBuilder queryBuilder = new StringBuilder();
+    queryBuilder.append("UPDATE tblUser SET userState=")
+        .append(enable ? User.UserState.ACTIVE : User.UserState.DISABLED)
+        .append(" where id=").append(userId).append(";");
+    DBConnector.getInstance().execute(queryBuilder.toString());
   }
 
   public List<User> findByNameOrLastName(String searchPhrase, Long currentUserId){
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT DISTINCT * FROM tblUser WHERE (firstName LIKE '%")
@@ -274,7 +224,7 @@ public class DAOUser{
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("UPDATE tblUser SET ")

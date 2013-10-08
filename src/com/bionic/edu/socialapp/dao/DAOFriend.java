@@ -32,7 +32,7 @@ public class DAOFriend {
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT u.* FROM tblFriend f, tblUser u WHERE f.userID=" + userId + " AND u.id=f.friendID;");
@@ -68,7 +68,7 @@ public class DAOFriend {
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("INSERT INTO tblFriend (userID, friendID) VALUES(").append(userId).append(",").append(friendId).append(");");
@@ -99,7 +99,7 @@ public class DAOFriend {
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder0 = new StringBuilder();
       StringBuilder queryBuilder1 = new StringBuilder();

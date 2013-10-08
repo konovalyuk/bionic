@@ -27,7 +27,7 @@ public class DAOChat {
     Connection connection = null;
     Statement statement = null;
     try {
-      connection = DBConnector.getConnection();
+      connection = DBConnector.getInstance().getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("INSERT INTO tblChat (chatID, userID) VALUES(").append(chatId).append(",").append(userId)

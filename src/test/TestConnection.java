@@ -14,7 +14,8 @@ public class TestConnection {
 
   public static void main(String[] args) throws UnsupportedEncodingException {
 //    System.out.println(DAOUser.getInstance().exist("admin"));
-    System.out.println(LoginUtils.encodeString("password"));
+//    System.out.println(LoginUtils.encodeString("password"));
+    System.out.println(DAOUser.getInstance().exist("admin"));
   }
 
 }

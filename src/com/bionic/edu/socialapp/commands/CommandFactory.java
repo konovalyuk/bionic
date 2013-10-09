@@ -35,6 +35,8 @@ public class CommandFactory {
           return new LoginCommand();
         case "account":
           return new MyAccountCommand();
+        case "registration":
+          return new RegistrationCommand();
         default:
           return new LoginCommand();
       }

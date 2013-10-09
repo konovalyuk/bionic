@@ -62,6 +62,43 @@ public class DAOUser{
     }
   }
 
+  public User getByLogin(String login){
+    Connection connection = null;
+    Statement statement = null;
+    try {
+      connection = DBConnector.getInstance().getConnection();
+      statement = connection.createStatement();
+      StringBuilder queryBuilder = new StringBuilder();
+      queryBuilder.append("SELECT * FROM tblUser where lgn='").append(login).append("';");
+      ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
+      if (resultSet.next()){
+        return getUserFromResultSet(resultSet);
+      } else {
+        return null;
+      }
+
+    } catch (SQLException | ClassNotFoundException e) {
+      e.printStackTrace();
+      throw new RuntimeException(e);
+    }
+    finally {
+      if (statement != null){
+        try {
+          statement.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      if (connection != null){
+        try {
+          connection.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
   public void delete(Long id) {
     StringBuilder queryBuilder = new StringBuilder();
     queryBuilder.append("DELETE FROM tblUser where id=").append(id).append(";");
@@ -103,11 +140,37 @@ public class DAOUser{
   }
 
   public void insert(User user ) {
-    //To change body of implemented methods use File | Settings | File Templates.
+    StringBuilder builder = new StringBuilder();
+    builder.append("INSERT INTO tblUser ")
+        .append("(lgn, passwd, firstName, lastName, phoneNumber, addressId, userRole, userState, sex, email) VALUES (")
+        .append("'").append(user.getLgn()).append("', ")
+        .append("'").append(user.getPasswd()).append("', ")
+        .append("'").append(user.getFirstName()).append("', ")
+        .append("'").append(user.getLastName()).append("', ")
+        .append("'").append(user.getPhoneNumber()).append("', ")
+        .append(user.getAddressId()).append(", ")
+        .append(user.getUserRole().ordinal()).append(", ")
+        .append(user.getUserState().ordinal()).append(", ")
+        .append(user.getSex()).append(", ")
+        .append("'").append(user.getEmail()).append("'); ");
+    DBConnector.getInstance().execute(builder.toString());
   }
 
   public void update(User user) {
-    //To change body of implemented methods use File | Settings | File Templates.
+    StringBuilder builder = new StringBuilder();
+    builder.append("UPDATE tblUser SET ")
+        .append("lgn = '").append(user.getLgn()).append("', ")
+        .append("passwd = '").append(user.getPasswd()).append("', ")
+        .append("firstName = '").append(user.getFirstName()).append("', ")
+        .append("lastName = '").append(user.getLastName()).append("', ")
+        .append("phoneNumber = '").append(user.getPhoneNumber()).append("', ")
+        .append("addressId = ").append(user.getAddressId()).append(", ")
+        .append("userRole = ").append(user.getUserRole().ordinal()).append(", ")
+        .append("userState = ").append(user.getUserState().ordinal()).append(", ")
+        .append("sex = ").append(user.getSex())
+        .append("email = ").append(user.getEmail())
+        .append(" WHERE id=").append(user.getId()).append(";");
+    DBConnector.getInstance().execute(builder.toString());
   }
 
   public User getUserById(Long id){
@@ -119,7 +182,11 @@ public class DAOUser{
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT * FROM tblUser where id=").append(id).append(";");
       ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
-      return getUserFromResultSet(resultSet);
+      if (resultSet.next()){
+        return getUserFromResultSet(resultSet);
+      } else {
+        return null;
+      }
     } catch (SQLException | ClassNotFoundException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
@@ -228,10 +295,11 @@ public class DAOUser{
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("UPDATE tblUser SET ")
-          .append("firstName=").append(user.getFirstName()).append(" ")
-          .append("lastName=").append(user.getLastName()).append(" ")
-          .append("phoneNumber=").append(user.getPhoneNumber()).append(" ")
+          .append("firstName='").append(user.getFirstName()).append("' ")
+          .append("lastName='").append(user.getLastName()).append("' ")
+          .append("phoneNumber='").append(user.getPhoneNumber()).append("' ")
           .append("sex=").append(user.getSex()).append(" ")
+          .append("email='").append(user.getEmail()).append("' ")
           .append(" WHERE id=").append(user.getId());
       statement.execute(queryBuilder.toString());
     } catch (SQLException | ClassNotFoundException e) {
@@ -274,6 +342,7 @@ public class DAOUser{
     user.setUserRole(User.UserRole.getByOrdinal(resultSet.getInt(8)));
     user.setUserState(User.UserState.getByOrdinal(resultSet.getInt(9)));
     user.setSex(User.UserSex.getByOrdinal(resultSet.getInt(10)));
+    user.setEmail(resultSet.getString(11));
     return user;
   }
 

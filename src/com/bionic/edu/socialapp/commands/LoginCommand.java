@@ -1,6 +1,8 @@
 package com.bionic.edu.socialapp.commands;
 
+import com.bionic.edu.socialapp.dao.DAOFriend;
 import com.bionic.edu.socialapp.dao.DAOUser;
+import com.bionic.edu.socialapp.entity.User;
 import com.bionic.edu.socialapp.utils.AppConstants;
 import com.bionic.edu.socialapp.utils.LoginUtils;
 
@@ -24,6 +26,9 @@ public class LoginCommand implements Command {
     try {
       if (LoginUtils.login(login, password, authToken)){
         request.setAttribute("loggedUser", DAOUser.getInstance().getUserFullNameByLogin(login));
+        User user = DAOUser.getInstance().getByLogin(login);
+        request.setAttribute("user", user);
+        request.setAttribute("friends", DAOFriend.getInstance().listFriends(user.getId()));
         result = "/my-account.jsp";
       } else {
         request.setAttribute("invalidLogin", true);

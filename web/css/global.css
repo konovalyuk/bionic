@@ -1,0 +1,17 @@
+
+body {
+    background: #bebebe;
+}
+
+input {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.width200 {
+    width: 200px;
+}

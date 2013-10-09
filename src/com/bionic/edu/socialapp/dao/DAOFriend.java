@@ -65,68 +65,25 @@ public class DAOFriend {
   }
 
   public void addFriend(Long userId, Long friendId){
-    Connection connection = null;
-    Statement statement = null;
-    try {
-      connection = DBConnector.getInstance().getConnection();
-      statement = connection.createStatement();
-      StringBuilder queryBuilder = new StringBuilder();
-      queryBuilder.append("INSERT INTO tblFriend (userID, friendID) VALUES(").append(userId).append(",").append(friendId).append(");");
-      statement.execute(queryBuilder.toString());
-    } catch (SQLException | ClassNotFoundException e) {
-      e.printStackTrace();
-      throw new RuntimeException(e);
-    }
-    finally {
-      if (statement != null){
-        try {
-          statement.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-    }
+    StringBuilder queryBuilder0 = new StringBuilder();
+    StringBuilder queryBuilder1 = new StringBuilder();
+    queryBuilder0.append("INSERT INTO tblFriend (userID, friendID) VALUES(")
+        .append(userId).append(",").append(friendId).append(");");
+    queryBuilder1.append("INSERT INTO tblFriend (userID, friendID) VALUES(")
+        .append(friendId).append(",").append(userId).append(");");
+    DBConnector connector = DBConnector.getInstance();
+    connector.execute(queryBuilder0.toString());
+    connector.execute(queryBuilder1.toString());
   }
 
   public void removeFriend(Long userId, Long friendId){
-    Connection connection = null;
-    Statement statement = null;
-    try {
-      connection = DBConnector.getInstance().getConnection();
-      statement = connection.createStatement();
-      StringBuilder queryBuilder0 = new StringBuilder();
-      StringBuilder queryBuilder1 = new StringBuilder();
-      queryBuilder0.append("DELETE FROM tblFriend WHERE userID=").append(userId).append(" AND friendID=").append(friendId).append(";");
-      queryBuilder1.append("DELETE FROM tblFriend WHERE userID=").append(friendId).append(" AND friendID=").append(userId).append(";");
-      statement.execute(queryBuilder0.toString());
-      statement.execute(queryBuilder1.toString());
-    } catch (SQLException | ClassNotFoundException e) {
-      e.printStackTrace();
-      throw new RuntimeException(e);
-    }
-    finally {
-      if (statement != null){
-        try {
-          statement.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-    }
+    StringBuilder queryBuilder0 = new StringBuilder();
+    StringBuilder queryBuilder1 = new StringBuilder();
+    queryBuilder0.append("DELETE FROM tblFriend WHERE userID=").append(userId).append(" AND friendID=").append(friendId).append(";");
+    queryBuilder1.append("DELETE FROM tblFriend WHERE userID=").append(friendId).append(" AND friendID=").append(userId).append(";");
+    DBConnector connector = DBConnector.getInstance();
+    connector.execute(queryBuilder0.toString());
+    connector.getInstance().execute(queryBuilder1.toString());
   }
 
 }

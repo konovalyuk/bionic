@@ -17,6 +17,7 @@ public class User {
   private UserRole userRole;
   private UserState userState;
   private UserSex sex;
+  private String email;
 
   public enum UserRole{
     USER, ADMIN;
@@ -56,7 +57,8 @@ public class User {
               Long addressId,
               UserRole userRole,
               UserState userState,
-              UserSex sex) {
+              UserSex sex,
+              String email) {
     this.id = id;
     this.lgn = lgn;
     this.passwd = passwd;
@@ -67,6 +69,7 @@ public class User {
     this.userRole = userRole;
     this.userState = userState;
     this.sex = sex;
+    this.email = email;
   }
 
   public Long getId() {
@@ -149,6 +152,14 @@ public class User {
     this.sex = sex;
   }
 
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
   @Override
   public String toString() {
     StringBuilder builder = new StringBuilder();
@@ -157,6 +168,7 @@ public class User {
         .append("[firstName:").append(this.getFirstName()).append("] ")
         .append("[lastName:").append(this.getLastName()).append("] ")
         .append("[sex:").append(this.getSex()).append("] ")
+        .append("[email:").append(this.getEmail()).append("] ")
         .append("[phone:").append(this.getPhoneNumber()).append("] ")
         .append("] ]");
     return builder.toString();

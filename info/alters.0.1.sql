@@ -92,3 +92,6 @@ CREATE TABLE tblAddress (
 ) ENGINE=InnDB DEFAULT CHARSET=utf8;
 #  add 'sex' column to tblUser
 ALTER TABLE tblUser ADD COLUMN sex BIGINT(1) NOT NULL DEFAULT 1;
+#  add 'email' column to tblUser
+ALTER TABLE tblUser ADD COLUMN email VARCHAR(50) NOT NULL;
+ALTER TABLE tblUser ADD UNIQUE(email);

@@ -16,21 +16,8 @@ public class LoginUtils {
 
   private static Map<String, String> tokens = new HashMap<>();
 
-  public static boolean login(String login, String password, String authToken) throws UnsupportedEncodingException {
-    // todo
-    if (isTokenValidForLogin(authToken, login)){
-      return true;
-    }
-    if (DAOUser.getInstance().login(login, password)){
-      tokens.remove(login);
-      tokens.put(login, encodeString(login + System.currentTimeMillis()));
-      return true;
-    }
-    return false;
-  }
-
-  public static boolean isTokenValidForLogin(String token, String login){
-    return token!=null && !token.isEmpty() && tokens.containsValue(token) && token.equals(tokens.get(login));
+  public static boolean login(String login, String password) throws UnsupportedEncodingException {
+    return DAOUser.getInstance().login(login, password);
   }
 
   // todo add later

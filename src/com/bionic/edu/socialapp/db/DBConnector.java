@@ -60,4 +60,34 @@ public class DBConnector {
     }
   }
 
+  public void insert(String query){
+    Connection connection = null;
+    Statement statement = null;
+    try {
+      connection = getConnection();
+      statement = connection.createStatement();
+      statement.execute(query);
+    } catch (SQLException | ClassNotFoundException e) {
+      e.printStackTrace();
+      throw new RuntimeException(e);
+    }
+    finally {
+      if (statement != null){
+        try {
+          statement.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      if (connection != null){
+        try {
+          connection.close();
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
+
 }

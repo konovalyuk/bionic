@@ -151,9 +151,9 @@ public class DAOUser{
         .append(user.getAddressId()).append(", ")
         .append(user.getUserRole().ordinal()).append(", ")
         .append(user.getUserState().ordinal()).append(", ")
-        .append(user.getSex()).append(", ")
+        .append(user.getSex().ordinal()).append(", ")
         .append("'").append(user.getEmail()).append("'); ");
-    DBConnector.getInstance().execute(builder.toString());
+    DBConnector.getInstance().insert(builder.toString());
   }
 
   public void update(User user) {

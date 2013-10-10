@@ -2,10 +2,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/bionic/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
     <title></title>
 </head>
 <body>
+<%@ include file="/header.jsp"%>
     Welcome, ${loggedUser}
     <br>
     Friends:

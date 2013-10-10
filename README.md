@@ -1,1 +1,1 @@
-study project fof Bionic university
+study project for Bionic university

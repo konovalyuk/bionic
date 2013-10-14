@@ -1,5 +1,7 @@
 package com.bionic.edu.socialapp.commands;
 
+import com.bionic.edu.socialapp.utils.AppConstants;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -8,8 +10,6 @@ import javax.servlet.http.HttpServletRequest;
  * Time: 8:45 PM
  */
 public class CommandFactory {
-
-  private static final String COMMAND_PARAM = "cmd";
 
   private static CommandFactory instance;
 
@@ -25,7 +25,7 @@ public class CommandFactory {
 
   public Command getCommand(HttpServletRequest request){
     if (request!=null) {
-      String command = request.getParameter(COMMAND_PARAM);
+      String command = request.getParameter(AppConstants.REQUEST_COMMAND);
       if (command==null){
         throw new IllegalArgumentException("Empty command");
       }

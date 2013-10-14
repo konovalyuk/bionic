@@ -7,6 +7,8 @@ package com.bionic.edu.socialapp.utils;
  */
 public class AppConstants {
 
+  public static final String REQUEST_COMMAND = "cmd";
+
   public static final String REQUEST_LOGIN = "login";
   public static final String REQUEST_PASSWORD = "password";
   public static final String REQUEST_EMAIL = "email";

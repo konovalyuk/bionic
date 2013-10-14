@@ -10,10 +10,11 @@
 <body>
     <page:header/>
     Welcome, <user:info/>
-    <br>
+    <hr>
     Friends:
     <c:forEach items="${friends}" var="friend" varStatus="num">
         <li> ${friend.firstName} ${friend.lastName}</li>
     </c:forEach>
+    <page:footer/>
 </body>
 </html>

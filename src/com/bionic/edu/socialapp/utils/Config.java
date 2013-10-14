@@ -1,9 +1,6 @@
 package com.bionic.edu.socialapp.utils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
+import java.util.ResourceBundle;
 
 /**
  * User: alex
@@ -13,7 +10,7 @@ import java.util.Properties;
 public class Config {
 
   private static Config instance;
-  Properties properties;
+  ResourceBundle properties;
 
   public static Config getInstance(){
     if (instance==null){
@@ -23,37 +20,34 @@ public class Config {
   }
 
   private Config() {
-    properties = new Properties();
     try {
-      String filePath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath()
-          .replace("/Config.class", "/config.properties");
-      properties.load(new FileInputStream(filePath.replace("file:", "")));
-//      properties.load(new FileInputStream("config.properties"));
-    } catch (IOException e) {
+      properties = ResourceBundle.getBundle("com.bionic.edu.socialapp.utils.config");
+    } catch (Exception e) {
       e.printStackTrace();
       System.err.println("Unable to load config file. Exit.");
       System.exit(42);
     }
+
   }
 
   public String getValue(String key){
-    return properties.getProperty(key);
+    return properties.getString(key);
   }
 
   public String getDBDriver(){
-    return properties.getProperty(AppConstants.CFG_DB_DRIVER);
+    return properties.getString(AppConstants.CFG_DB_DRIVER);
   }
 
   public String getDConnectionString(){
-    return properties.getProperty(AppConstants.CFG_DB_CONNECTION);
+    return properties.getString(AppConstants.CFG_DB_CONNECTION);
   }
 
   public String getDBLogin(){
-    return properties.getProperty(AppConstants.CFG_DB_LOGIN);
+    return properties.getString(AppConstants.CFG_DB_LOGIN);
   }
 
   public String getDBPassword(){
-    return properties.getProperty(AppConstants.CFG_DB_PASSWORD);
+    return properties.getString(AppConstants.CFG_DB_PASSWORD);
   }
 
 }

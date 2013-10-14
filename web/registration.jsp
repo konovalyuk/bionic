@@ -1,3 +1,4 @@
+<%@ taglib prefix="page" uri="/WEB-INF/tags/pageTags.tld" %>
 <%--
   User: alex
   Date: 10/8/13
@@ -10,6 +11,7 @@
     <title></title>
 </head>
 <body>
+    <page:header/>
     <form action="/app" method="POST">
         <h5>Please, fill the form</h5>
         <input type="hidden" name="cmd" value="registration">
@@ -27,5 +29,6 @@
         <label for="passwd2" class="inline width200">Repeat your password</label><input id="passwd2" name="passwd2" type="password"/><br>
         <input type="submit" value="Register">
     </form>
+    <page:footer/>
 </body>
 </html>

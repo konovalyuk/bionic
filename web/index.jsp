@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="page" uri="/WEB-INF/tags/pageTags.tld" %>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="/css/global.css">
@@ -7,6 +8,7 @@
 </head>
 
 <body>
+<page:header/>
 <form name="loginForm" action="/app" method="POST">
     <div>
         <input type="hidden" name="cmd" value="login"/>
@@ -24,5 +26,6 @@
 </form>
 <hr>
 <div>Don't have account yet? <a href="/registration.jsp"> Register for free!</a></div>
+<page:footer/>
 </body>
 </html>

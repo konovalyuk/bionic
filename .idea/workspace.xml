@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2866a90-cad9-463a-b736-f68aa14b6eab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/ChatCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/FriendsCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/HttpUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LogoutCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/my-account.jsp" afterPath="$PROJECT_DIR$/web/app/my-account.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/filter/AuthFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/tags/HeaderTag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/tags/UserInfoTag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/tags/pageTags.tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/tags/userTags.tld" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/app/my-account.jsp" afterPath="$PROJECT_DIR$/web/application/my-account.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/db/DBConnector.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/db/DBConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/HttpUtils.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/HttpUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/LoginUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/RegistrationCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LogoutCommand.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LogoutCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java" afterPath="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration.jsp" afterPath="$PROJECT_DIR$/web/registration.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="dd47b037-22ba-4844-9848-a055f985208d" name="not-for-commit" comment="" />
@@ -27,21 +24,21 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/MyHandler.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380814339129" ignored="false" />
     <file path="/1-oct" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380646869445" ignored="false" />
-    <file path="/fragment.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381252395440" ignored="false" />
+    <file path="/fragment.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381696587518" ignored="false" />
     <file path="/alters.0.1.sql" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381254418136" ignored="false" />
     <file path="/3-oct-2013" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380814494421" ignored="false" />
     <file path="/DBConnector.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381424120075" ignored="false" />
     <file path="/a.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380817634505" ignored="false" />
     <file path="/a.js" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380820031989" ignored="false" />
-    <file path="/Dummy.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381433437457" ignored="false" />
+    <file path="/Dummy.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381735451774" ignored="false" />
     <file path="/config.properties" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380821492558" ignored="false" />
     <file path="/Config.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381252339427" ignored="false" />
     <file path="/ICommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380821996883" ignored="false" />
-    <file path="/LoginCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381425048221" ignored="false" />
+    <file path="/LoginCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381561885732" ignored="false" />
     <file path="/CommandFactory.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381427155884" ignored="false" />
     <file path="/MyAccountCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381426149738" ignored="false" />
     <file path="/ControllerServlet.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380964124605" ignored="false" />
-    <file path="/AppConstants.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381419317465" ignored="false" />
+    <file path="/AppConstants.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381561874767" ignored="false" />
     <file path="/DAOUser.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381424781623" ignored="false" />
     <file path="/README.md" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380868776135" ignored="false" />
     <file path="/DAOFactory.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380917303836" ignored="false" />
@@ -54,12 +51,12 @@
     <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2_1.xsd" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959085588" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspdirectives2_1.xsd" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959085588" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2.xsd" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959085588" ignored="false" />
-    <file path="/index.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381427437917" ignored="false" />
-    <file path="/web.xml" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380959750797" ignored="false" />
+    <file path="/index.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381565508921" ignored="false" />
+    <file path="/web.xml" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381566005685" ignored="false" />
     <file path="/less3-6-10-2013.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380960325323" ignored="false" />
     <file path="/less2-3-10-2013.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1380960331815" ignored="false" />
     <file path="/login.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381423826375" ignored="false" />
-    <file path="/my-account.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381427205134" ignored="false" />
+    <file path="/my-account.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563895823" ignored="false" />
     <file path="/DAOFriends.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381086858212" ignored="false" />
     <file path="/User.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381254373135" ignored="false" />
     <file path="/Friend.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381084658882" ignored="false" />
@@ -72,7 +69,7 @@
     <file path="$PROJECT_DIR$/../KS/v84/Services/src/com/keysurvey/tasks/workflow/action/CreateTaskActionBehaviour.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381127767381" ignored="false" />
     <file path="$PROJECT_DIR$/../KS/v84/API/utest/com/keysurvey/api/v81/model/DataModelAPIHelperTestCase.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381128724668" ignored="false" />
     <file path="/DataModelAPIHelperTestCase.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381128624035" ignored="false" />
-    <file path="/a.dummy" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381418926433" ignored="false" />
+    <file path="/a.dummy" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381564314918" ignored="false" />
     <file path="$PROJECT_DIR$/../KS/v84/Services/src/com/keysurvey/tasks/workflow/action/EmailActionBehaviour.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381150396678" ignored="false" />
     <file path="/EmailActionBehaviour.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381150396678" ignored="false" />
     <file path="$PROJECT_DIR$/../KS/v84/Services/src/com/keysurvey/tasks/workflow/entities/WorkflowAction.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381136761869" ignored="false" />
@@ -114,13 +111,22 @@
     <file path="/RegistrationCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381425067572" ignored="false" />
     <file path="/lsn1-1-10-2013.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381420101983" ignored="false" />
     <file path="/SessionTest.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381424364106" ignored="false" />
-    <file path="/LogoutCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381426970644" ignored="false" />
-    <file path="/HttpUtils.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381422040230" ignored="false" />
+    <file path="/LogoutCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381564398353" ignored="false" />
+    <file path="/HttpUtils.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563207540" ignored="false" />
     <file path="/UrlHelper.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381426958333" ignored="false" />
     <file path="/theory.txt" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381424427963" ignored="false" />
     <file path="/ChatCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381426304648" ignored="false" />
     <file path="/FriendsCommand.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381426319041" ignored="false" />
     <file path="/header.jsp" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381427376487" ignored="false" />
+    <file path="/AuthFilter.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381735613060" ignored="false" />
+    <file path="/TagTest.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381562407841" ignored="false" />
+    <file path="/userTags.tld" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381562901210" ignored="false" />
+    <file path="/UserInfoTag.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563334048" ignored="false" />
+    <file path="/ActionScript File Header.txt.ft" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563412165" ignored="false" />
+    <file path="/File Header.txt.ft" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563419872" ignored="false" />
+    <file path="/Catch Statement Body.txt.ft" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563431889" ignored="false" />
+    <file path="/HeaderTag.java" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563694662" ignored="false" />
+    <file path="/pageTags.tld" changelist="e2866a90-cad9-463a-b736-f68aa14b6eab" time="1381563867002" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +142,38 @@
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/filter/AuthFilter.java" line="27" class="com.bionic.edu.socialapp.controller.filter.AuthFilter" package="com.bionic.edu.socialapp.controller.filter">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" line="30" class="com.bionic.edu.socialapp.commands.LoginCommand" package="com.bionic.edu.socialapp.commands">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -172,7 +210,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -185,25 +222,7 @@
       <file leaf-file-name="RegistrationCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/RegistrationCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="6" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alters.0.1.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/info/alters.0.1.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="38" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0">
+            <state line="15" column="13" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -212,43 +231,52 @@
       <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="70" selection-start="0" selection-end="900" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyAccountCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+            <state line="25" column="80" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/ChatCommand.java">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+            <state line="22" column="32" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Command.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/Command.java">
+      <file leaf-file-name="AuthFilter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/filter/AuthFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="17" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandFactory.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="136" selection-end="136" vertical-scroll-proportion="0.38043478">
+            <state line="21" column="50" selection-start="481" selection-end="481" vertical-scroll-proportion="0.1891892">
               <folding />
             </state>
           </provider>
@@ -257,7 +285,16 @@
       <file leaf-file-name="AppConstants.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+            <state line="7" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="25" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -266,7 +303,16 @@
       <file leaf-file-name="LogoutCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LogoutCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="49" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+            <state line="16" column="25" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="52" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -291,22 +337,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/SessionTest.java" />
-        <option value="$PROJECT_DIR$/info/lessons/theory.txt" />
-        <option value="$PROJECT_DIR$/web/registration.jsp" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/dao/DAOUser.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/RegistrationCommand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/FriendsCommand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/ChatCommand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LogoutCommand.java" />
-        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java" />
         <option value="$PROJECT_DIR$/web/app/my-account.jsp" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/TagTest.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tags/userTags.tld" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/HttpUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/tags/UserInfoTag.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/tags/HeaderTag.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tags/pageTags.tld" />
+        <option value="$PROJECT_DIR$/web/application/my-account.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LogoutCommand.java" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/filter/AuthFilter.java" />
       </list>
     </option>
   </component>
@@ -463,6 +509,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -509,6 +556,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -527,7 +614,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -568,6 +655,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socialapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -677,6 +790,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socialapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -716,25 +855,24 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="68" />
-    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="66" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="85" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="86" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="68" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="68" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/jsp-api.jar!/" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="91" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="890" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="890" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="880" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="91" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="86" />
@@ -745,17 +883,17 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -813,6 +951,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -841,19 +992,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -867,6 +1005,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1057,7 +1202,11 @@
       <created>1381301491773</created>
       <updated>1381301491773</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="registration + logout">
+      <created>1381433734726</created>
+      <updated>1381433734726</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1069,13 +1218,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41474655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718894" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32718894" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1083,7 +1232,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4583691" sideWeight="0.5852535" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19484979" sideWeight="0.67281103" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1135,7 +1284,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="some DAO + entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter+some improvement" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1156,6 +1305,8 @@
     <MESSAGE value="sun, oct-6" />
     <MESSAGE value="from work test" />
     <MESSAGE value="some DAO + entities" />
+    <MESSAGE value="registration + logout" />
+    <MESSAGE value="filter+some improvement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1165,114 +1316,127 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/info/lessons/theory.txt">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tags/userTags.tld">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="9" selection-start="6066" selection-end="6066" vertical-scroll-proportion="0.0" />
+        <state line="14" column="27" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/FriendsCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/HttpUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+        <state line="16" column="64" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/tags/UserInfoTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="28" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/tags/HeaderTag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="38" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+        <state line="21" column="18" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tags/pageTags.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="27" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/my-account.jsp">
+    <entry file="file://$PROJECT_DIR$/web/application/my-account.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+        <state line="9" column="17" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="38" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0">
+        <state line="2" column="70" selection-start="0" selection-end="900" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LogoutCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="49" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+        <state line="16" column="25" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/MyAccountCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/UrlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+        <state line="9" column="52" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/RegistrationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="6" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info/alters.0.1.sql">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="25" column="80" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/ChatCommand.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+        <state line="22" column="32" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/LoginCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+        <state line="31" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/commands/CommandFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="136" selection-end="136" vertical-scroll-proportion="0.38043478">
+        <state line="25" column="25" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/utils/AppConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bionic/edu/socialapp/controller/filter/AuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="50" selection-start="481" selection-end="481" vertical-scroll-proportion="0.1891892">
           <folding />
         </state>
       </provider>

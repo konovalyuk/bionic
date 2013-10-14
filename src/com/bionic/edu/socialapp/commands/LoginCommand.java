@@ -26,13 +26,13 @@ public class LoginCommand implements Command {
     try {
       if (LoginUtils.login(login, password)){
         User user = DAOUser.getInstance().getByLogin(login);
-        request.setAttribute("loggedUser", user.getFirstName() + " " + user.getLastName());
-        request.setAttribute("user", user);
-        request.getSession().setAttribute("user", user);
-        request.setAttribute("friends", DAOFriend.getInstance().listFriends(user.getId()));
+        request.setAttribute(AppConstants.REQUEST_LOGGED_IN_USER, user.getFirstName() + " " + user.getLastName());
+        request.setAttribute(AppConstants.REQUEST_USER, user);
+        request.getSession().setAttribute(AppConstants.SESSION_USER, user);
+        request.setAttribute(AppConstants.REQUEST_FRIENDS, DAOFriend.getInstance().listFriends(user.getId()));
         result = UrlHelper.URL_MY_ACCOUNT;
       } else {
-        request.setAttribute("invalidLogin", true);
+        request.setAttribute(AppConstants.REQUEST_INVALID_LOGIN, true);
         request.setAttribute(AppConstants.REQUEST_LOGIN, login);
       }
     } catch (UnsupportedEncodingException e) {

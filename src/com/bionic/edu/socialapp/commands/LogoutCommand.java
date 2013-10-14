@@ -14,6 +14,6 @@ public class LogoutCommand implements Command {
   @Override
   public String execute(HttpServletRequest request, HttpServletResponse response) {
     request.getSession().invalidate();
-    return UrlHelper.URL_INDEX;
+    return UrlHelper.URL_LOGIN;
   }
 }

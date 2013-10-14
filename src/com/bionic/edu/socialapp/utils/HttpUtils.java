@@ -14,7 +14,7 @@ public class HttpUtils {
 
   public static User getUserFromSession(HttpServletRequest request){
     HttpSession session = request.getSession(true);
-    return (User) session.getAttribute("user");
+    return (User) session.getAttribute(AppConstants.SESSION_USER);
   }
 
 }

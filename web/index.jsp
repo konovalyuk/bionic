@@ -1,35 +1,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-  <head>
+<head>
     <link rel="stylesheet" type="text/css" href="/css/global.css">
     <title></title>
-  </head>
-  <body>
-  <script type="text/javascript" src="script/libs/jquery-1.10.2.js"></script>
-  <div style="text-align: center;">
-      Welcome to alpha version of 'Social app lite v 0.0.1'
-      <br>
-      You can:<br>
-      <input type="button" id="login" value="Login" data-url="/login.jsp"/>
-      <br>OR<br>
-      <input type="button" id="rgstr" value="Register" data-url="/registration.jsp"/>
-  </div>
-    <script type="text/javascript">
-        jQuery(document).ready(function(){
+</head>
 
-            function relocate(element){
-                window.location = $(element).attr("data-url");
-            }
-
-            jQuery('#login').on('click', function(){
-                relocate(this);
-            });
-
-            jQuery('#rgstr').on('click', function(){
-                relocate(this);
-            });
-
-        });
+<body>
+<form name="loginForm" action="/app" method="POST">
+    <div>
+        <input type="hidden" name="cmd" value="login"/>
+        <label for="login" class="inline width200">Login</label>
+        <input type="text" id="login" name="login" value="${login}"/> <br>
+        <label for="password" class="inline width200">Password</label>
+        <input type="password" id="password" name="password"/><br>
+        <input type="submit" value="Login"/>
+    </div>
+    <script>
+        <c:if test="${invalidLogin}">
+        alert('Please, check your credentials');
+        </c:if>
     </script>
-  </body>
+</form>
+<hr>
+<div>Don't have account yet? <a href="/registration.jsp"> Register for free!</a></div>
+</body>
 </html>

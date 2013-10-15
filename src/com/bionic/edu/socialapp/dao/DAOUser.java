@@ -1,6 +1,7 @@
 package com.bionic.edu.socialapp.dao;
 
-import com.bionic.edu.socialapp.db.DBConnector;
+import com.bionic.edu.socialapp.db.ConnectionPool;
+import com.bionic.edu.socialapp.db.DBTools;
 import com.bionic.edu.socialapp.entity.User;
 
 import java.sql.Connection;
@@ -33,14 +34,15 @@ public class DAOUser{
   public boolean exist(String login) {
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT 1 FROM tblUser where lgn='").append(login).append("';");
       ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
       return resultSet.first();
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -52,21 +54,16 @@ public class DAOUser{
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 
   public User getByLogin(String login){
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT * FROM tblUser where lgn='").append(login).append("';");
@@ -77,7 +74,7 @@ public class DAOUser{
         return null;
       }
 
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -89,27 +86,22 @@ public class DAOUser{
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 
   public void delete(Long id) {
     StringBuilder queryBuilder = new StringBuilder();
     queryBuilder.append("DELETE FROM tblUser where id=").append(id).append(";");
-    DBConnector.getInstance().execute(queryBuilder.toString());
+    DBTools.execute(queryBuilder.toString());
   }
 
   public boolean login(String login, String password){
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder
@@ -117,7 +109,7 @@ public class DAOUser{
           .append("' AND passwd='").append(password).append("';");
       ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
       return resultSet.first();
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -129,13 +121,7 @@ public class DAOUser{
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 
@@ -153,7 +139,7 @@ public class DAOUser{
         .append(user.getUserState().ordinal()).append(", ")
         .append(user.getSex().ordinal()).append(", ")
         .append("'").append(user.getEmail()).append("'); ");
-    DBConnector.getInstance().insert(builder.toString());
+    DBTools.insert(builder.toString());
   }
 
   public void update(User user) {
@@ -170,14 +156,15 @@ public class DAOUser{
         .append("sex = ").append(user.getSex())
         .append("email = ").append(user.getEmail())
         .append(" WHERE id=").append(user.getId()).append(";");
-    DBConnector.getInstance().execute(builder.toString());
+    DBTools.execute(builder.toString());
   }
 
   public User getUserById(Long id){
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT * FROM tblUser where id=").append(id).append(";");
@@ -187,7 +174,7 @@ public class DAOUser{
       } else {
         return null;
       }
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -199,27 +186,22 @@ public class DAOUser{
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 
   public String getUserFullNameByLogin(String login){
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT CONCAT(firstName, ' ',lastName) FROM tblUser where lgn='").append(login).append("';");
       ResultSet resultSet = statement.executeQuery(queryBuilder.toString());
       return resultSet.next() ? resultSet.getString(1) : "Unnamed user";
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -231,13 +213,7 @@ public class DAOUser{
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 
@@ -246,14 +222,15 @@ public class DAOUser{
     queryBuilder.append("UPDATE tblUser SET userState=")
         .append(enable ? User.UserState.ACTIVE : User.UserState.DISABLED)
         .append(" where id=").append(userId).append(";");
-    DBConnector.getInstance().execute(queryBuilder.toString());
+    DBTools.execute(queryBuilder.toString());
   }
 
   public List<User> findByNameOrLastName(String searchPhrase, Long currentUserId){
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT DISTINCT * FROM tblUser WHERE (firstName LIKE '%")
@@ -265,7 +242,7 @@ public class DAOUser{
         matched.add(DAOUser.getUserFromResultSet(resultSet));
       }
       return matched;
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -277,21 +254,16 @@ public class DAOUser{
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 
   public void updateUser(User user){
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("UPDATE tblUser SET ")
@@ -302,7 +274,7 @@ public class DAOUser{
           .append("email='").append(user.getEmail()).append("' ")
           .append(" WHERE id=").append(user.getId());
       statement.execute(queryBuilder.toString());
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -314,13 +286,7 @@ public class DAOUser{
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 

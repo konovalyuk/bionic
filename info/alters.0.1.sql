@@ -95,3 +95,27 @@ ALTER TABLE tblUser ADD COLUMN sex BIGINT(1) NOT NULL DEFAULT 1;
 #  add 'email' column to tblUser
 ALTER TABLE tblUser ADD COLUMN email VARCHAR(50) NOT NULL;
 ALTER TABLE tblUser ADD UNIQUE(email);
+
+CREATE TABLE tblFriendRequest (
+
+  id  BIGINT NOT NULL AUTO_INCREMENT,
+  fromID BIGINT NOT NULL,
+  toID BIGINT NOT NULL,
+
+  PRIMARY KEY (id),
+
+  CONSTRAINT fk_tblFriendRequest_from_id FOREIGN KEY (fromID) REFERENCES tblUser(id),
+  CONSTRAINT fk_tblFriendRequest_to_id FOREIGN KEY (toID) REFERENCES tblUser(id)
+
+) ENGINE=InnDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE tblNotification (
+  id  BIGINT NOT NULL AUTO_INCREMENT,
+  userID BIGINT NOT NULL,
+  type BIGINT (1) NOT NULL ,
+
+  PRIMARY KEY (id),
+
+  CONSTRAINT fk_tblNotification_user_id FOREIGN KEY (userID) REFERENCES tblUser(id)
+
+) ENGINE=InnDB DEFAULT CHARSET=utf8;

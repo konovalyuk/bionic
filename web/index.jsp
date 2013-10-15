@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="page" uri="/WEB-INF/tags/pageTags.tld" %>
+<%@ taglib prefix="user" uri="/WEB-INF/tags/userTags.tld" %>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="/css/global.css">
@@ -8,6 +9,7 @@
 </head>
 
 <body>
+<user:clearUser/>
 <page:header/>
 <form name="loginForm" action="/app" method="POST">
     <div>

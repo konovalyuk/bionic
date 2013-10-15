@@ -1,4 +1,5 @@
 <%@ taglib prefix="page" uri="/WEB-INF/tags/pageTags.tld" %>
+<%@ taglib prefix="user" uri="/WEB-INF/tags/userTags.tld" %>
 <%--
   User: alex
   Date: 10/8/13
@@ -11,6 +12,7 @@
     <title></title>
 </head>
 <body>
+    <user:clearUser/>
     <page:header/>
     <form action="/app" method="POST">
         <h5>Please, fill the form</h5>

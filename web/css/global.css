@@ -15,3 +15,14 @@ input {
 .width200 {
     width: 200px;
 }
+
+.menu {
+  border: 3px groove #bebebe;
+  border-radius: 10px;
+  display: inline-block;
+  height : 39%;
+  width: 45%;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}

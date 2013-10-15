@@ -1,6 +1,7 @@
 package com.bionic.edu.socialapp.dao;
 
-import com.bionic.edu.socialapp.db.DBConnector;
+import com.bionic.edu.socialapp.db.ConnectionPool;
+import com.bionic.edu.socialapp.db.DBTools;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -26,14 +27,15 @@ public class DAOChat {
   public void addUserToChat(Long userId, Long chatId){
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("INSERT INTO tblChat (chatID, userID) VALUES(").append(chatId).append(",").append(userId)
           .append(");");
       statement.execute(queryBuilder.toString());
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -45,13 +47,7 @@ public class DAOChat {
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 

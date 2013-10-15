@@ -11,9 +11,9 @@
 
     <!-- Invoke 'Generate' action to add tags or functions -->
     <tag>
-        <name>info</name>
-        <tag-class>com.bionic.edu.socialapp.utils.tags.UserInfoTag</tag-class>
-        <body-content>empty</body-content>
+      <name>clearUser</name>
+      <tag-class>com.bionic.edu.socialapp.utils.tags.AutoLogoutUserTag</tag-class>
+      <body-content>empty</body-content>
     </tag>
 
 </taglib>

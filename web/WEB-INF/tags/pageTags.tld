@@ -21,4 +21,9 @@
       <tag-class>com.bionic.edu.socialapp.utils.tags.FooterTag</tag-class>
       <body-content>empty</body-content>
     </tag>
+    <tag>
+      <name>menu</name>
+      <tag-class>com.bionic.edu.socialapp.utils.tags.MenuTag</tag-class>
+      <body-content>empty</body-content>
+    </tag>
 </taglib>

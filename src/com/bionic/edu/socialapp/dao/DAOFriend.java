@@ -1,6 +1,7 @@
 package com.bionic.edu.socialapp.dao;
 
-import com.bionic.edu.socialapp.db.DBConnector;
+import com.bionic.edu.socialapp.db.ConnectionPool;
+import com.bionic.edu.socialapp.db.DBTools;
 import com.bionic.edu.socialapp.entity.User;
 
 import java.sql.Connection;
@@ -31,8 +32,9 @@ public class DAOFriend {
   public List<User> listFriends(Long userId) {
     Connection connection = null;
     Statement statement = null;
+    ConnectionPool pool = ConnectionPool.getInstance();
     try {
-      connection = DBConnector.getInstance().getConnection();
+      connection = pool.getConnection();
       statement = connection.createStatement();
       StringBuilder queryBuilder = new StringBuilder();
       queryBuilder.append("SELECT u.* FROM tblFriend f, tblUser u WHERE f.userID=" + userId + " AND u.id=f.friendID;");
@@ -42,7 +44,7 @@ public class DAOFriend {
         friends.add(DAOUser.getUserFromResultSet(resultSet));
       }
       return friends;
-    } catch (SQLException | ClassNotFoundException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException(e);
     }
@@ -54,13 +56,7 @@ public class DAOFriend {
           e.printStackTrace();
         }
       }
-      if (connection != null){
-        try {
-          connection.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
+      pool.closeConnection(connection);
     }
   }
 
@@ -71,9 +67,8 @@ public class DAOFriend {
         .append(userId).append(",").append(friendId).append(");");
     queryBuilder1.append("INSERT INTO tblFriend (userID, friendID) VALUES(")
         .append(friendId).append(",").append(userId).append(");");
-    DBConnector connector = DBConnector.getInstance();
-    connector.execute(queryBuilder0.toString());
-    connector.execute(queryBuilder1.toString());
+    DBTools.execute(queryBuilder0.toString());
+    DBTools.execute(queryBuilder1.toString());
   }
 
   public void removeFriend(Long userId, Long friendId){
@@ -81,9 +76,8 @@ public class DAOFriend {
     StringBuilder queryBuilder1 = new StringBuilder();
     queryBuilder0.append("DELETE FROM tblFriend WHERE userID=").append(userId).append(" AND friendID=").append(friendId).append(";");
     queryBuilder1.append("DELETE FROM tblFriend WHERE userID=").append(friendId).append(" AND friendID=").append(userId).append(";");
-    DBConnector connector = DBConnector.getInstance();
-    connector.execute(queryBuilder0.toString());
-    connector.getInstance().execute(queryBuilder1.toString());
+    DBTools.execute(queryBuilder0.toString());
+    DBTools.execute(queryBuilder1.toString());
   }
 
 }
